@@ -48,7 +48,7 @@ K=1;
 Ncol1=1;
 Ncol2=3;
 
-% Cantidad de observaciones del conjunto de test
+% Cantidad de observaciones del conjunto de entrenamiento.
 N=60;
 
 % Puntos de incio y termino en la serie para el proceso de entrenamiento
