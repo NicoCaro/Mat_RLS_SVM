@@ -33,3 +33,23 @@ En esta [pagina](http://irafm.osu.cz/cif/main.php?c=Static&page=download "Datos 
 * Añadir Agrupacion por similitud
 * Añadir MLK 
 * Traduccion a python
+
+## Insrtucciones de Uso
+
+El codigo principal corre con main.m, hay que explicitar el tamaño del conjuto de entrenamiento y el orgen de los datos,
+por efecto se cargan los datos ATM que se encuentran en el archivo DATA.mat. Para probar el algoritmo con los datos nuevos,
+hacer un "load" del archivo cif.mat y guardad la variable CIF como DATA, luego comentar la linea 37 de main.m.
+
+Las funciones y clases auxiliares que usa el programa son:
+
+* main.m    --> Codigo Principal
+* app.m     --> Funcion auxiliar para la evaluacion recurrente del metodo RLS-SVM
+* bot.m     --> Bot que guarda los valores "val" obtenidos en archivos .m
+* defautls  --> Diccionario de valores defaul para cada kernel
+* gr.m      --> Generacion de red para validacion de metrica y metodo grid.
+* J_D.m     --> Funcion objetivo del problema de optimizacion.
+* kernel.m  --> Diccionario de kernels.
+* metrics.m --> Diccionario de metricas.
+* M_train   --> training script.
+* Nres      --> Generaion de las restriccion no lineales de igualdad.
+* RLS_SVM.m --> Estimador RLS-SVM.
