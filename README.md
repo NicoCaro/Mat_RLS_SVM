@@ -17,11 +17,19 @@ la data nueva esta en la carpeta "Data cif" y contiene las especificaciones para
 * Mejorar la forma de almacenar los resultados. bot.m
 
 ## Data nueva
+
+La carpeta "DATA csv" contiene los datos "nuevos", el programa funciona para estas series de tiempo nuevas aunque hay que fijar 
+el tamaño del conjunto de entrenamiento. El programa funcionó sin ningun problema sobre las primeras 3 series de tiempo, 
+para un conjunto de entrenamiento de tamaño N=60. Los datos de la carpeta "DATA csv" estan procesados de manera tal que  cada
+columna es una serie distinta, los datos como "nombre" "horizonte" e "intervalo" fueron removido. Para medir la performance en 
+test es necesario usar la variable de horizonte de prediccion.
  
- Los nuevos datos se obtienen de la siguiente [pagina](http://irafm.osu.cz/cif/main.php?c=Static&page=download "Datos CIF")
+En esta [pagina](http://irafm.osu.cz/cif/main.php?c=Static&page=download "Datos CIF") hay informacion adiional sobre los datos.
+
 
 ## Pasos a seguir
 
+* Decidir si se añade otra base de datos.
 * Añadir Agrupacion por similitud
 * Añadir MLK 
 * Traduccion a python
